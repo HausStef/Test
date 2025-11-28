@@ -2,13 +2,35 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>Loop Videos</title>
-</head>
+<title>Videos Responsive</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background: black;
+  }
 
-<body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh; background-color:black; gap:20px;">
-  <video src="Untitled0000.mp4" autoplay loop muted playsinline style="max-width:45%; height:auto;"></video>
-  <video src="Wil.mp4" autoplay loop muted playsinline style="max-width:45%; height:auto;"></video>
-</body>
-  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  video {
+    width: 100%;
+    max-width: 480px;   /* skaliert automatisch */
+    height: auto;
+    flex: 1 1 300px;    /* responsive Flexbox */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <video src="Untitled0000.mp4" autoplay loop muted playsinline></video>
+  <video src="vWil.mp4" autoplay loop muted playsinline></video>
+</div>
+
 </body>
 </html>
